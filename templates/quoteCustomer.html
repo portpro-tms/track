@@ -1,0 +1,81 @@
+<html lang="en">
+
+<body>
+    <section class="table-head">
+        <div class="container" style="max-width: 1150px; width: 100%;margin: 0 auto;">
+            <div class="table-data" style="width: 100%;display: inline-block;">
+                <div class="left-data" style="float: left; width: 70%;">
+                    <div style="padding-left: 15px;">
+                        <img src={{logoCarrier result.carrier.email}} alt="logo" style="width: 200px;">
+                        <p
+                            style="margin: 0; font-size: 20px; color: #000;font-weight: bold; font-family: 'roboto',sans-serif;">
+                            {{result.carrier.carrier.company_name}}</p>
+                        <address
+                            style="font-size: 17px;margin: 10px 0; font-style: normal;font-family: roboto,sans-serif;font-weight: 300;">
+                            {{result.carrier.carrier.address.address}}</address>
+                        <a href="#"
+                            style="font-size: 17px; text-decoration: none; color: #16bde2; font-family: roboto,sans-serif;font-weight: 300;">{{result.carrier.carrier.mobile}}</a>
+                    </div>
+                </div>
+
+                <div class="right-data" style="float: left;width: 30%;">
+                    <p
+                        style="margin: 10px 0; font-size: 20px; color: #000;font-weight: 500; text-align: center; font-family: 'roboto',sans-serif;">
+                        Qoute</p>
+                    <p
+                        style="margin: 10px 0; font-size: 20px; color: #000;font-weight: 500; text-align: center; font-family: 'roboto',sans-serif;">
+                        {{result.quote}} </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pro-table" style="padding-top: 55px;">
+        <div class="container" style="max-width: 1150px; width: 100%;margin: 0 auto;">
+            <div class="table-data">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead style="border-bottom: 1px solid #d2d2d2">
+                        <tr>
+                            <th
+                                style="width: 15%; text-align: left; padding-left: 15px; padding-bottom: 15px; color: #000;font-size: 14px;font-family: robot,sans-serif;">
+                                NAME</th>
+                            <th
+                                style="width: 12%; text-align: left;color: #000;font-size: 14px;padding-bottom: 15px; font-family: robot,sans-serif;">
+                                DESCRIPTION</th>
+                            <th
+                                style="width: 25%; text-align: left;color: #000;font-size: 14px;padding-bottom: 15px;font-family: robot,sans-serif;">
+                                RATE</th>
+                            <th
+                                style="width: 12%; text-align: left;color: #000;font-size: 14px;padding-bottom: 15px;font-family: robot,sans-serif;">
+                                FREE DAYS</th>
+                            <th
+                                style="width: 12%; text-align: left;color: #000;font-size: 14px;padding-bottom: 15px;font-family: robot,sans-serif;">
+                                $ FREE DAYS</th>
+                            <th
+                                style="width: 12%; text-align: left;color: #000;font-size: 14px;padding-bottom: 15px;font-family: robot,sans-serif;">
+                                FREE MINUTES</th>
+                            <th
+                                style="width: 12%; text-align: left;color: #000;font-size: 14px;padding-bottom: 15px;font-family: robot,sans-serif;">
+                                $ PER MINUTES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#result.pricing}}
+                        <tr style="border-bottom: 1px solid #d2d2d2">
+                            <td style="padding:15px 15px 15px 15px">{{name}}</td>
+                            <td style="padding:15px 15px 15px 0">{{description}}</td>
+                            <td style="padding:15px 15px 15px 0">{{finalAmount}}</td>
+                            <td style="padding:15px 15px 15px 0">{{freeDays}}</td>
+                            <td style="padding:15px 15px 15px 0">{{chargePerDay}}</td>
+                            <td style="padding:15px 15px 15px 0">{{freeMinutes}}</td>
+                            <td style="padding:15px 15px 15px 0">{{chargePerMinute}}</td>
+                        </tr>
+                        {{/result.pricing}}
+
+
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,1522 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title>
+
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        #outlook a {
+            padding: 0;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass * {
+            line-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        p {
+            display: block;
+            margin: 13px 0;
+        }
+    </style>
+
+
+
+
+
+
+
+
+    <style type="text/css">
+        .mj-column-per-60 {
+            width: 60% !important;
+            max-width: 60%;
+        }
+
+        .mj-column-per-40 {
+            width: 40% !important;
+            max-width: 40%;
+        }
+
+        .mj-column-per-70 {
+            width: 70% !important;
+            max-width: 70%;
+        }
+
+        .mj-column-per-30 {
+            width: 30% !important;
+            max-width: 30%;
+        }
+
+        .mj-column-per-24 {
+            width: 24% !important;
+            max-width: 24%;
+        }
+
+        .mj-column-per-1 {
+            width: 1.33% !important;
+            max-width: 1.33%;
+        }
+
+        .mj-column-per-100 {
+            width: 100% !important;
+            max-width: 100%;
+        }
+
+        .mj-column-per-33 {
+            width: 33.33% !important;
+            max-width: 33.33%;
+        }
+
+        .mj-column-per-32 {
+            width: 32.4466666667% !important;
+            max-width: 32.4466666667%;
+        }
+
+        .mj-column-per-48 {
+            width: 48% !important;
+            max-width: 48%;
+        }
+
+        .mj-column-per-4 {
+            width: 4% !important;
+            max-width: 4%;
+        }
+    </style>
+
+
+    <style type="text/css">
+        @media only screen and (max-width:480px) {
+            table.full-width-mobile {
+                width: 100% !important;
+            }
+            td.full-width-mobile {
+                width: auto !important;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color:#ffffff;">
+
+
+    <div style="background-color:#ffffff;">
+        <!-- START HEADER -->
+
+
+
+
+        <div style="background:#fdfdfd;background-color:#fdfdfd;Margin:0px auto;max-width:800px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fdfdfd;background-color:#fdfdfd;width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:10px 0;text-align:center;vertical-align:top;">
+
+
+                            <div class="mj-column-per-70 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:10px 10px 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="width:150px;">
+                                                                          {{#if invoiceLogo}}
+                                                                        <img alt="logo" height="auto" src={{invoiceLogo}} style="border:0;display:block;outline:none;text-decoration:none;height:auto;max-height:80px;width:auto; max-width:100%" width="auto" />{{/if}}
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;padding-top:10px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:12px;font-weight:bold;line-height:1;text-align:left;color:#425065;">
+                                                                {{carrier.carrier.company_name}}
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;padding-top:5px;word-break:break-word;">
+                                                          <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:20px;text-align:left;color:#425065;">
+                                                            {{{invoice_address}}}<br><a style="text-decoration: none; font-family: sans-serif; color: #00a6ff;" href="tel:9088623095">{{carrier.carrier.mobile}}</a></div>
+
+
+
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-30 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:10px 10px 10px 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <table cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:12px;line-height:22px;table-layout:auto;width:100%;">
+                                                                <tr>
+                                                                    <td style="font-size:18px; color:#425065; padding-bottom:10px;" colspan="2">
+                                                                        Proof Of Delivery
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#727e8d;"><b>Load #</b></td>
+                                                                    <td style="color:#727e8d;" align="right">{{reference_number}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#727e8d;"><b>Delivery Appt :</b></td>
+                                                                    <td style="color:#727e8d;" align="right">{{deliveryDate}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#727e8d;"><b>Pickup # :</b></td>
+                                                                    <td style="color:#727e8d;" align="right">{{pickupRef}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#727e8d;"><b>Reference # :</b></td>
+                                                                    <td style="color:#727e8d;" align="right">{{secondaryReferenceNo}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#727e8d;"><b>Driver # :</b></td>
+                                                                    <td style="color:#727e8d;" align="right">{{activeDriverName}}</td>
+                                                                </tr>
+                                                                {{#if isNts}}
+                                                                  {{#if terminal}}
+                                                                    <td style="color:#727e8d;"><b>Terminal :</b></td>
+                                                                    <td style="color:#727e8d;" align="right">{{terminal.name}}</td>
+                                                                  {{/if}}
+                                                                {{/if}}
+
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+        <!-- END HEADER -->
+        <!-- START CARDS ROW -->
+
+
+
+
+        <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:800px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:15px;text-align:left;vertical-align:top;">
+
+
+                            <div class="mj-column-per-24 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:2px solid #eeeeee;vertical-align:top;padding:10px 15px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td vertical-align="top" style="font-size:0px;padding:0px;word-break:break-word;">
+
+
+                                                            <div style="margin:0 auto;max-width:150.8px;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                                    <tr style="vertical-align:top;">
+
+                                                                        <td style="background:#ffffff;background-position:center center;background-repeat:no-repeat;padding:0px;vertical-align:top;" height="150">
+
+
+                                                                            <div class="mj-hero-content" style="margin:0px auto;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+                                                                                    <tr>
+                                                                                        <td style="">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;padding-bottom:10px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:10px;font-weight:bold;letter-spacing:1px;line-height:23px;text-align:left;color:#425065;">
+                                                                                                            {{#if isImport}}
+                                                                                                            <span>PICK UP - LOADED</span> {{/if}} {{#if isExport}}
+                                                                                                            <span>PICK EMPTY</span> {{/if}} {{#if isRoad}}
+                                                                                                            <span>PICK UP</span> {{/if}}
+
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                {{#pickupLocation}}
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                            <b>{{company_name}}</b>
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                            <b>Address:</b> {{address}}
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                {{/pickupLocation}}
+
+
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+
+
+                                                                        </td>
+
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-24 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:2px solid #eeeeee;border-radius:8px;vertical-align:top;padding:10px 15px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td vertical-align="top" style="font-size:0px;padding:0px;word-break:break-word;">
+
+
+                                                            <div style="margin:0 auto;max-width:150.8px;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                                    <tr style="vertical-align:top;">
+
+                                                                        <td style="background:#ffffff;background-position:center center;background-repeat:no-repeat;padding:0px;vertical-align:top;" height="150">
+
+
+                                                                            <div class="mj-hero-content" style="margin:0px auto;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+                                                                                    <tr>
+                                                                                        <td style="">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;padding-bottom:10px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:10px;font-weight:bold;letter-spacing:1px;line-height:23px;text-align:left;color:#425065;">
+                                                                                                            {{#if isImport}}
+                                                                                                            <span>DELIVER LOAD</span> {{/if}} {{#if isExport}}
+                                                                                                            <span>GET LOADED</span> {{/if}} {{#if isRoad}}
+                                                                                                            <span>DELIVER</span> {{/if}}
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                {{#deliveryLocation}}
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                            <b>{{company_name}}</b>
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                            <b>Address:</b> {{address}}
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                {{/deliveryLocation}}
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+
+
+                                                                        </td>
+
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-24 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:2px solid #eeeeee;border-radius:8px;vertical-align:top;padding:10px 15px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td vertical-align="top" style="font-size:0px;padding:0px;word-break:break-word;">
+
+
+                                                            <div style="margin:0 auto;max-width:150.8px;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                                    <tr style="vertical-align:top;">
+
+                                                                        <td style="background:#ffffff;background-position:center center;background-repeat:no-repeat;padding:0px;vertical-align:top;" height="150">
+
+
+                                                                            <div class="mj-hero-content" style="margin:0px auto;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+                                                                                    <tr>
+                                                                                        <td style="">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
+
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;padding-bottom:10px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:10px;font-weight:bold;letter-spacing:1px;line-height:23px;text-align:left;color:#425065;">
+                                                                                                            {{#if isImport}}
+                                                                                                            <span>RETURN - EMPTY</span> {{/if}} {{#if isExport}}
+                                                                                                            <span>RETURN LOAD</span> {{/if}}
+                                                                                                            <!-- {{#if isRoad}}
+                                                                                                            <span>Deliver</span>
+                                                                                                            {{/if}} -->
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                {{#emptyDeposition}}
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:12px;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                            <b>{{company_name}}</b>
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+
+                                                                                                <tr>
+                                                                                                    <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                        <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                            <b>Address: </b>{{address}}
+                                                                                                        </div>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                {{/emptyDeposition}}
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+
+
+                                                                        </td>
+
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+        <!-- END CARDS ROW -->
+        <!-- START ORDER DETAILS -->
+
+
+
+
+        <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:800px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:10px 15px;text-align:center;vertical-align:top;">
+
+
+                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:10px;font-weight:bold;letter-spacing:1px;line-height:23px;text-align:left;color:#425065;">
+                                                                ORDER DETAILS
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+        <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:800px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:0 15px;padding-bottom:20px;text-align:center;vertical-align:top;">
+
+
+
+                            <div style="Margin:0px auto;max-width:770px;">
+
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:2px solid #eeeeee;direction:ltr;font-size:0px;padding:10px 15px;text-align:center;vertical-align:top;">
+
+
+                                                <div class="mj-column-per-33 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="vertical-align:top;padding:0px;">
+
+                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                                                        {{#if secondaryReferenceNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Reference #:</b> {{secondaryReferenceNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if isImport}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Booking/BL:</b> {{callerbillLandingNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}} {{#if isExport}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Booking/BL:</b> {{bookingNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if pickupDate}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Pickup Date:</b> {{pickupDate}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if statusDelivery}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Delivery Date:</b> {{statusDelivery}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if freeReturnDate}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Return Date:</b> {{freeReturnDate}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if lastFreeDay}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Last Free Day:</b> {{lastFreeDay}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+
+                                                                        {{#if doNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>DO #:</b> {{doNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+
+
+                                                <div class="mj-column-per-33 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="vertical-align:top;padding:0px;">
+
+                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                                                        {{#if containerNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Container # :</b> {{containerNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if callerPONo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Pick Up #:</b> {{callerPONo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if temperature}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Temperature :</b> {{temperature}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if hazamat}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Hazmat:</b> {{hazamat}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if releaseNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Order #:</b> {{releaseNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if shipmentNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Shipment #:</b> {{shipmentNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+
+
+
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+
+
+                                                <div class="mj-column-per-33 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="vertical-align:top;padding:0px;">
+
+                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                                                        {{#if chassisNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Chassis # :</b> {{chassisNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if isImport}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Container Info:</b> {{containerSize.name}} {{containerType.name}} {{containerOwner.company_name}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if isExport}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Container Info:</b> {{containerSize.name}} {{containerType.name}} {{containerOwner.company_name}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+
+
+                                                                        {{#if sealNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Seal #:</b> {{sealNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if deliveryOrderNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Vessel Name #:</b> {{deliveryOrderNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+                                                                        {{#if purchaseOrderNo}}
+                                                                        <tr>
+                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                    <b>Purchase Order #:</b> {{purchaseOrderNo}}
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        {{/if}}
+
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+
+
+                                                <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="vertical-align:top;padding:0px;">
+
+                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+        <!-- END ORDER DETAILS -->
+
+        {{#if items}}
+        <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:800px; margin-bottom: 20px;">
+
+
+
+            <table cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#000000;font-family:sans-serif;font-size:12px;line-height:22px;table-layout:auto;width:100%;">
+                <thead>
+                    <tr style="text-align:left; background-color:#E5E5E5;">
+                        <th style="color:#425065;padding: 8px 15px; font-family:sans-serif; font-size:10px; font-weight:bold; text-align:left;line-height:23px; letter-spacing:1px; text-transform:uppercase;" width="20%">COMMODITY</th>
+                        <th style="color:#425065;padding: 8px 15px; font-family:sans-serif; font-size:10px; font-weight:bold; text-align:left;line-height:23px; letter-spacing:1px; text-transform:uppercase;" width="30%">DESCRIPTION</th>
+                        <th style="color:#425065;padding: 8px 15px; font-family:sans-serif; font-size:10px; font-weight:bold; text-align:left;line-height:23px; letter-spacing:1px; text-transform:uppercase;">Weight</th>
+                        <th style="color:#425065;padding: 8px 15px; font-family:sans-serif; font-size:10px; font-weight:bold; text-align:left;line-height:23px; letter-spacing:1px; text-transform:uppercase">PALLETS</th>
+                        <th style="color:#425065;padding: 8px 15px; font-family:sans-serif; font-size:10px; font-weight:bold; text-align:left;line-height:23px; letter-spacing:1px; text-transform:uppercase">PIECES</th>
+                    </tr>
+                </thead>
+                {{#items}}
+                <tbody>
+                    <tr style="text-align:left;">
+                        <td style="padding: 10px 15px;border-bottom:1px solid #E5E5E5">{{commodity}}</td>
+                        <td style="padding: 10px 15px;border-bottom:1px solid #E5E5E5">{{description}}</td>
+                        <td style="padding: 10px 15px;border-bottom:1px solid #E5E5E5">{{weight}} LBS</td>
+                        <td style="padding: 10px 15px;border-bottom:1px solid #E5E5E5">{{pallets}}</td>
+                        <td style="padding: 10px 15px;border-bottom:1px solid #E5E5E5">{{pieces}}</td>
+                    </tr>
+                </tbody>
+                {{/items}}
+            </table>
+
+
+        </div>
+        {{/if}}
+
+
+        <div style="Margin:0px auto;max-width:800px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:20px 15px;text-align:center;vertical-align:top;">
+
+
+                            <div class="mj-column-per-32 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="50" style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+
+                                                <!-- Replace your Print Name here -->
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                <b>Print Name</b>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-32 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="50">
+                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;height:50px;text-align:left;color:#727e8d;">
+                                                    {{#if partySignature}}
+                                                    <img src={{partySignature}} height="50px" style="height: 50px; width: auto;" /> {{/if}}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                <b>Customer Signature</b>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-32 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="50" style="font-family:sans-serif;font-size:12px;font-weight:lighter;height:50px;text-align:left;color:#727e8d;">
+
+                                                {{#if agreementTime}} {{agreementTime}} {{/if}}
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                <b>Date</b>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+        <div style="Margin:0px auto;max-width:800px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:20px 15px;text-align:center;vertical-align:top;">
+
+
+                            <div class="mj-column-per-32 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td vertical-align="top" style="font-size:0px;padding:0px;word-break:break-word;">
+
+
+
+
+
+                                                            <div style="Margin:0px auto;max-width:249.83933333358996px;">
+
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;vertical-align:top;">
+
+
+                                                                                <div class="mj-column-per-48 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="50" style="font-family:sans-serif;font-size:12px;font-weight:lighter;height:50px;text-align:left;color:#727e8d;">
+                                                                                                    {{timeIn}}
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                                                                        <tr>
+                                                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                                    <b>Time In</b>
+                                                                                                                </div>
+
+                                                                                                            </td>
+                                                                                                        </tr>
+
+                                                                                                    </table>
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+
+                                                                                </div>
+
+
+
+                                                                                <div class="mj-column-per-4 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="vertical-align:top;padding:0px;">
+
+                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                                                                    </table>
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+
+                                                                                </div>
+
+
+
+                                                                                <div class="mj-column-per-48 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="50" style="font-family:sans-serif;font-size:12px;font-weight:lighter;height:50px;text-align:left;color:#727e8d;">
+                                                                                                    {{timeOut}}
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                                                                                        <tr>
+                                                                                                            <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                                                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                                                                    <b>Time Out</b>
+                                                                                                                </div>
+
+                                                                                                            </td>
+                                                                                                        </tr>
+
+                                                                                                    </table>
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+
+                                                                                </div>
+
+
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+
+
+
+
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-32 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="50">
+                                                <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;height:50px;text-align:left;color:#727e8d;">
+                                                    <!-- Replace code with driver signature here -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                <b>Driver Signature</b>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-1 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:top;padding:0px;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+                            <div class="mj-column-per-32 outlook-group-fix" style="font-size:12px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="50" style="font-family:sans-serif;font-size:12px;font-weight:lighter;height:50px;text-align:left;color:#727e8d;">
+
+                                                <!--Replace code with date here-->
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:2px solid #eeeeee;vertical-align:top;padding:10px 0 0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+
+                                                    <tr>
+                                                        <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
+
+                                                            <div style="font-family:sans-serif;font-size:12px;font-weight:lighter;line-height:23px;text-align:left;color:#727e8d;">
+                                                                <b>Date</b>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div style="Margin:0px auto;max-width:800px;">
+
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+              <tbody>
+                  <tr>
+                      <td style="direction:ltr;font-size:0px;padding:10px;text-align:center;vertical-align:top;">
+
+                        {{#if isErl}}
+                        <div style="font-family:sans-serif;font-size:12px;line-height:20px;text-align:center;color:#425065;">
+                            <p><b>RECEIVED, subject to the “Common Carrier Rate Agreement” or the CONTRACT between the Shipper and Carrier in effect on the date of shipment, the property described below,
+      received in good order, except as noted (contents and condition of contents of packages unknown), marked, consigned, and destined as shown below. This Bill of Lading is not
+      subject to any tariffs or classifications whether individually determined or filed with any federal or state regulatory agency, except as specifically agreed to in writing by the Shipper
+      and Carrier. Rate individually determined and NOT subject to filed tariffs.</b> </p>
+                        </div>
+                        {{/if}}
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
+      </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

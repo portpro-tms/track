@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <style>
+    thead{
+      background-color: #c5c5c5;
+    }
+    thead tr th{
+      padding: 10px 5px;
+      border: 1px solid;
+    }
+    tbody tr td {
+      padding: 5px;
+      border: 1px solid;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div style=" width: 100%; margin: 0px auto; text-align: center; padding: 80px 10px 41px 10px;">
+  </div>
+  <div>
+    <table style=" width: 100%;border: 1px solid;border-collapse: collapse;text-align: left;">
+      <thead>
+        <tr>
+          {{#headers}}
+          <th style="border: 1px solid;">{{this}}</th>
+          {{/headers}}
+        </tr>
+      </thead>
+      {{#result as |item|}}
+      <tr>
+        {{#each item}}
+        <td style="border: 1px solid">{{this}}</td>
+        {{/each}}
+      </tr>
+      {{/result}}
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <div style=" width: 100%; margin: 0px auto; text-align: center; padding: 80px 10px 41px 10px;">
+    <img src="https://app.portpro.io/assets/img/new-logo.png" alt="" style="width: 200;">
+  </div>
+  <div>
+    Expiration Drivers
+    <table style=" width: 100%;border: 1px solid;border-collapse: collapse;text-align: left;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>dlExp</th>
+          <th>medicalExp</th>
+          <th>seaLinkExp</th>
+          <th>termination</th>
+          <th>twicExp</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#result.drivers}}
+        <tr>
+          <td style="border: 1px solid">{{mobile}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow dlExp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow medicalExp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow seaLinkExp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow termination}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow twicExp}}</td>
+        </tr>
+        {{/result.drivers}}
+      </tbody>
+    </table>
+    Expiration Trucks
+    <table style=" width: 100%;border: 1px solid;border-collapse: collapse;text-align: left;">
+      <thead>
+        <tr>
+          <th>equipmentID</th>
+          <th>ITD</th>
+          <th>annual_inspection</th>
+          <th>bobtail_insurance</th>
+          <th>diesel_emission</th>
+          <th>hut_exp</th>
+          <th>ifta</th>
+          <th>inspection_exp</th>
+          <th>reg_expiration</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#result.trucks}}
+        <tr>
+          <td style="border: 1px solid">{{equipmentID}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow ITD}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow annual_inspection}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow bobtail_insurance}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow diesel_emission}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow hut_exp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow ifta}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow inspection_exp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow reg_expiration}}</td>
+        </tr>
+        {{/result.trucks}}
+      </tbody>
+    </table>
+    Expiration Trailers
+    <table style=" width: 100%;border: 1px solid;border-collapse: collapse;text-align: left;">
+      <thead>
+        <tr>
+          <th>equipmentID</th>
+          <th>ITD</th>
+          <th>annual_inspection</th>
+          <th>bobtail_insurance</th>
+          <th>diesel_emission</th>
+          <th>hut_exp</th>
+          <th>ifta</th>
+          <th>inspection_exp</th>
+          <th>reg_expiration</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#result.trailers}}
+        <tr>
+          <td style="border: 1px solid">{{equipmentID}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow ITD}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow annual_inspection}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow bobtail_insurance}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow diesel_emission}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow hut_exp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow ifta}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow inspection_exp}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow reg_expiration}}</td>
+        </tr>
+        {{/result.trailers}}
+      </tbody>
+    </table>
+    Expiration Chassis
+    <table style=" width: 100%;border: 1px solid;border-collapse: collapse;text-align: left;">
+      <thead>
+        <tr>
+          <th>chassisNo</th>
+          <th>ITD</th>
+          <th>AID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#result.chasses}}
+        <tr>
+          <td style="border: 1px solid">{{chassisNo}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow ITD}}</td>
+          <td style="border: 1px solid">{{formatDateFromNow AID}}</td>
+        </tr>
+        {{/result.chasses}}
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

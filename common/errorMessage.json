@@ -1,0 +1,5 @@
+{
+    "loginError" : "Invalid login credentials in this Port's Profile",
+    "noDataError" : "Container's information not found on this Port's site",
+    "failedScrapeError" : "Unable to successfully check Port's site"
+}

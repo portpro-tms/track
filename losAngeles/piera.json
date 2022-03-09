@@ -1,0 +1,8 @@
+{
+    "DISCHHLD": "HOLD",
+    "NONE":"HOLD",
+    "CLEARED":"RELEASED",
+    "TMFHOLD": "HOLD",
+    "PAID": "RELEASED",
+    "HOLD": "HOLD"
+}

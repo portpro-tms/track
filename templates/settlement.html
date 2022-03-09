@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf</title>
+
+
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .oddTdLable {
+            font-family: proxima-nova, sans-serif;
+            font-size: 6px;
+            font-weight: 700;
+            padding: 6px 6px 1px 6px;
+        }
+
+        .oddTdContent {
+            font-family: proxima-nova, sans-serif;
+            font-size: 6px;
+            font-weight: 500;
+            padding: 6px 6px 1px 6px;
+        }
+
+        .evenTdLable {
+            font-family: proxima-nova, sans-serif;
+            font-size: 6px;
+            font-weight: 700;
+            padding: 6px 6px 1px 6px;
+        }
+
+        .evenTdContent {
+            font-family: proxima-nova, sans-serif;
+            font-size: 6px;
+            font-weight: 500;
+            padding: 6px 6px 1px 6px;
+        }
+
+        .priceTableHeader {
+            font-family: proxima-nova, sans-serif;
+            font-size: 6px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 15px;
+            padding: 6px 6px 1px 6px;
+            border: 1px solid #b5b5b5;
+            text-align: center;
+        }
+
+        .priceTablebody {
+            font-family: Open Sans, Helvetica, Arial, sans-serif;
+            font-size: 7px;
+            font-weight: 400;
+            padding: 6px 6px 1px 6px;
+            text-align: center;
+            border: 1px solid #b5b5b5;
+        }
+
+        body {
+            font-family: proxima-nova, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .detail-tabel-contain {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            margin: 0 auto;
+            display: table;
+        }
+
+        .detail-table {
+            background-color: rgb(238, 238, 238);
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="display:inline-block;width:100%;padding-bottom: 10px;">
+                                <div style="padding: 0 20px;">
+                                    <div style="float: left;width: 65%;">
+                                        <div>
+                                            <p
+                                                style=" font-size: 10px;font-weight: normal;margin: 0;color:#1f1f1f;text-align: left;padding: 8px 0px;">
+                                                {{company.carrier.company_name}}</p>
+                                            <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                                <span class="boldname">Address : </span> {{{invoice_address}}}</p>
+                                            <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                                <span class="boldname">Phone:</span> {{company.carrier.mobile}}</p>
+                                            <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                                <span class="boldname">Fax:</span> {{company.carrier.mobile}}</p>
+                                        </div>
+                                    </div>
+                                    <div style="float: right;width: 35%;">
+                                        <div>
+                                            <p
+                                                style="font-size: 8px;font-weight: normal;margin: 0;color: #000000;text-align: left;padding: 8px 0px;">
+                                                <a href="#"
+                                                    target="_blank"
+                                                    style="color: #1b1b1b;text-decoration-skip: ink;text-decoration: underline;">Settlement</a>
+                                            </p>
+                                            <div
+                                                style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;text-align: justify;">
+                                                <span class="boldname">Driver : </span>{{driverName}}</div>
+                                            <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                                <span class="boldname">Settlement : </span> {{settlement.settlementNo}}</p>
+                                            <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                                <span class="boldname">Settlement Period : </span>{{startDate}} - {{endDate}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div
+                                style="display:inline-block;width:100%;border-top: 1px dashed #b5b5b5;padding: 10px 0;">
+                                <div style="padding: 0 20px;">
+                                    <div style="float: left;width: 65%;">
+                                        <p
+                                            style="font-size: 10px;font-weight: normal;margin: 0;color: #1f1f1f;text-align: left;padding: 8px 0px;">
+                                            Deduction</p>
+                                            {{#deduction}}
+                                        <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                            <span class="">{{name}} : </span> {{amount}}</p>
+                                            {{/deduction}}
+                                            <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;"><span style="font-weight: 400;" class="">Total Deduction: {{deductionAmount}}</span>{{amount}}</p>
+                                    </div>
+                                    <div style="float: right;width: 35%;">
+                                        <p
+                                            style="font-size: 10px;font-weight: normal;margin: 0;color: #1f1f1f;text-align: left;padding: 8px 0px;">
+                                            Payment</p>
+                                        <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                            <span class="">Total Trip pay : </span>{{totalAmount}}</p>
+                                        <p style="font-size: 8px; font-weight: 500;line-height: 2; margin: 0;">
+                                            <span class="">Total payment : </span>{{netAmount}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        {{#if notes}}
+             <div><p style="font-size: 10px;padding-left: 20px; font-weight: 500;line-height: 2; margin: 0;"><b style="font-weight: bold;">Note: </b> {{notes}}</p></div>
+            {{/if}}
+            </td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr style="background: #f7f7f7;border: 1px solid #b5b5b5;">
+                        <th class="priceTableHeader" scope="col">LOAD</th>
+                        <th class="priceTableHeader" scope="col">CONTAINER NO</th>
+                        <th class="priceTableHeader" scope="col">DRIVE</th>
+                        <th class="priceTableHeader" scope="col">TIME</th>
+                        <th class="priceTableHeader" scope="col">FORM</th>
+                        <th class="priceTableHeader" scope="col">TO</th>
+                        <th class="priceTableHeader" scope="col">STATUS</th>
+                        <th class="priceTableHeader" scope="col">PAYMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  {{#settlements}}
+                  <tr>
+                    <td class="priceTablebody">{{reference_number}}</td>
+                    <td class="priceTablebody">{{containerNo}}</td>
+                    <td class="priceTablebody"> {{createdBy.name}} {{createdBy.lastName}}</td>
+                    <td class="priceTablebody">{{completedTime}}</td>
+                    <td class="priceTablebody"> {{from}}</td>
+                    <td class="priceTablebody">{{to}}</td>
+                    <td class="priceTablebody">{{status}}</td>
+                    <td class="priceTablebody"> {{totalAmount}}</td>
+                </tr>
+                  {{/settlements}}
+                </tbody>
+            </table>
+
+</body>
+
+</html>

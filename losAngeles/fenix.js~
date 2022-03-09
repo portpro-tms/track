@@ -1,0 +1,116 @@
+const chromium = require("chrome-aws-lambda");
+
+const moment = require("moment");
+require("moment-timezone");
+
+process.setMaxListeners(0);
+
+const httpRequest = require("../common/httpRequest");
+const getResponseValues = require("../common/getResponseValues");
+let browser;
+
+const fenix = async ({
+  port,
+  portUsername,
+  portPassword,
+  containerNo,
+  timeZone,
+}) => {
+  let detail = {};
+  const browser = await chromium.puppeteer.launch({
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath,
+    headless: chromium.headless,
+    ignoreHTTPSErrors: true,
+  });
+  try {
+    const page = await browser.newPage();
+    page.setViewport({ width: 1366, height: 768 });
+    await page.goto("https://fenixmarine.voyagecontrol.com/dashboard/home");
+    await page.waitForSelector("#loginForm");
+    await page.type("#login-username", portUsername, {
+      delay: 10,
+    });
+    await page.type("#login-password", portPassword, {
+      delay: 10,
+    });
+    await page.click("#loginButton");
+    // Wait for logged page
+    await page.waitForNavigation();
+    await page.waitForSelector("#main-content");
+    await page.waitForTimeout(2000);
+
+    var accessTokenObj = await page.evaluate(() => {
+      return localStorage.getItem("json-web-token");
+    });
+
+    let notfound = true;
+    if (notfound) {
+      let options2 = {
+        method: "get",
+        url: `https://fenixmarine.voyagecontrol.com/api/bookings_inquiry/container_tracking/?param=${containerNo}&venue=fenixmarine`,
+        headers: {
+          authorization: "JWT " + accessTokenObj,
+        },
+      };
+
+      let response2 = await httpRequest(options2);
+      if (response2.data.data && response2.data.data.length > 0) {
+        let parsedData = JSON.parse(response2.data.data[0]);
+        if (
+          parsedData["query-response"] &&
+          parsedData["query-response"]["data-table"] &&
+          parsedData["query-response"]["data-table"]["rows"] &&
+          parsedData["query-response"]["data-table"]["rows"]["row"] &&
+          parsedData["query-response"]["data-table"]["rows"]["row"].field &&
+          parsedData["query-response"]["data-table"]["rows"]["row"].field
+            .length > 0
+        ) {
+          notfound = false;
+          let columns =
+            parsedData["query-response"]["data-table"]["columns"]["column"];
+          let fields =
+            parsedData["query-response"]["data-table"]["rows"]["row"].field;
+
+          if (columns && columns.length > 0) {
+            detail.extraTracerData = {};
+            columns.forEach((element, i) => {
+              if (element === "Last Free Day") {
+                let dat = moment.tz(fields[i], timeZone);
+                dat.add(
+                  moment(fields[i]).tz(timeZone).utcOffset() * -1,
+                  "minutes"
+                );
+                detail.last_free_day = dat.toISOString();
+              }
+              if (
+                element === "Stop-Road" &&
+                (fields[i] === null || fields[i] === "false")
+              ) {
+                detail.status = "available";
+              }
+
+              if (element === "Booking Number") {
+                detail.status = fields[i];
+              }
+              if (element === "Unit Nbr") {
+                detail.containerNo = fields[i];
+              }
+              detail.extraTracerData[element] = fields[i];
+            });
+          }
+        }
+      }
+    }
+
+    await browser.close();
+    return getResponseValues(detail);
+  } catch (e) {
+    await browser.close();
+    detail.caution = "Container Not Found";
+    return getResponseValues(detail);
+  }
+};
+
+module.exports = fenix;
